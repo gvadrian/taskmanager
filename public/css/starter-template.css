@@ -1,0 +1,137 @@
+body {
+    padding-top: 50px;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+a:link {
+    text-decoration: inherit;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.button {
+    cursor: pointer;
+}
+.button.glyphicon {
+    top: 3px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.button:hover {
+    color: #3097D1;
+}
+ul {
+    margin: 30px auto;
+    text-align: left;
+    width: 50%;
+}
+span.manage_buttons {
+    float: right;
+    width: 58px;
+}
+div.back_layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 4;
+}
+div.accept_dialog {
+    position: fixed;
+    background-color: #f5f8fa;
+    width: 300px;
+    height: 130px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #101010 ;
+    left: 50%;
+    top: 30%;
+    margin-left:-115px;
+    z-index: 5;
+    opacity: 1;
+    text-align: center;
+    padding-top: 8px;
+}
+div.accept_dialog > span.title {
+    font-size: 25px;
+}
+button.button {
+    border-radius: 4px;
+    margin: 20px 16px 20px 16px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+button.button:hover {
+    animation-name: spin;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    transition: all 0.3s ease-out;
+}
+button.button:first-child {
+    border: 1px solid grey;
+    background-color: white;
+}
+button.button:last-child {
+    border: none;
+    color: white;
+    background-color: rgba(0,134,16,0.75);
+}
+button.button:first-child:hover {
+    background-color: grey;
+    color: white;
+}
+button.button:last-child:hover {
+    border: none;
+    background-color: lightgreen;
+    color: darkgreen;
+}
+@keyframes spin {
+    0% {
+        width: 100px;
+        transform:rotate(0deg);
+    }
+    50% {
+        width: 110px;
+        transform:rotate(5deg);
+    }
+    100% {
+        width: 100px;
+        transform:rotate(0deg);
+    }
+}
+form#edit {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 15px 10px 50px 10px;
+    border-radius: 4px;
+}
+.right {
+    float: right;
+}
+textarea {
+    resize: vertical;
+}
+.btn-success, .btn-primary {
+    position: fixed;
+    top: 9.5%;
+    right: 20%;
+}
+form#create {
+    position: fixed;
+    top: 100px;
+    padding: 20px;
+    width: 500px;
+    left: calc(50% - 250px);
+    background-color: lightgray;
+    border-radius: 4px;
+    box-shadow: 0 0 100px 0 rgba(0,0,0,0.5);
+    z-index: 5;
+}
